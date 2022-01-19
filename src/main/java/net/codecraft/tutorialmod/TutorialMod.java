@@ -1,5 +1,6 @@
 package net.codecraft.tutorialmod;
 
+import net.codecraft.tutorialmod.blocks.ModBlock;
 import net.codecraft.tutorialmod.item.ModItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -34,6 +35,7 @@ public class TutorialMod
         IEventBus EventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItem.register(EventBus);
+        ModBlock.register(EventBus);
         EventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
         EventBus.addListener(this::enqueueIMC);

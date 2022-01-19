@@ -1,5 +1,7 @@
 {
   "item.tutorialmod.steel_ingot": "Steel Ingot",
 
-  "itemGroup.tutorialModTab": "Tutorial Mod"
+  "itemGroup.tutorialModTab": "Tutorial Mod",
+
+  "block.tutorialmod.steel_ore": "Steel Ore"
 }

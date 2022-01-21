@@ -26,7 +26,7 @@ public class ModBlock {
             .setRequiresTool()
             .hardnessAndResistance(5f,10f)));
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",()->new Block(AbstractBlock.Properties
-            .create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).hardnessAndResistance(5f)));
+            .create(Material.IRON).harvestLevel(2).harvestTool(ToolType.PICKAXE).hardnessAndResistance(5f)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T>block){

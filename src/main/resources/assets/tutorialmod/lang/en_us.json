@@ -3,5 +3,6 @@
 
   "itemGroup.tutorialModTab": "Tutorial Mod",
 
-  "block.tutorialmod.steel_ore": "Steel Ore"
+  "block.tutorialmod.steel_ore": "Steel Ore",
+  "block.tutorialmod.steel_block": "Steel Block"
 }

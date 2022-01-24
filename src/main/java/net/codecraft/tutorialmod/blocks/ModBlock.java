@@ -1,6 +1,7 @@
 package net.codecraft.tutorialmod.blocks;
 
 import net.codecraft.tutorialmod.TutorialMod;
+import net.codecraft.tutorialmod.blocks.advance.FirestoneBlock;
 import net.codecraft.tutorialmod.item.ModItem;
 import net.codecraft.tutorialmod.item.ModItemGroup;
 import net.minecraft.block.AbstractBlock;
@@ -29,7 +30,7 @@ public class ModBlock {
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",()->new Block(AbstractBlock.Properties
             .create(Material.IRON).harvestLevel(2).harvestTool(ToolType.PICKAXE).hardnessAndResistance(5f)),ModItemGroup.TUTORIAL_GROUP);
     public static final RegistryObject<Block> FIRESTONEBLOCK = registerBlock("firestoneblock",()->
-            new Block(AbstractBlock.Properties.create(Material.IRON).harvestLevel(2)
+            new FirestoneBlock(AbstractBlock.Properties.create(Material.IRON).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)),ModItemGroup.TUTORIAL_GROUP);
 

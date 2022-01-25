@@ -6,6 +6,7 @@ import net.codecraft.tutorialmod.item.ModItem;
 import net.codecraft.tutorialmod.item.ModItemGroup;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -20,6 +21,10 @@ import java.util.function.Supplier;
 
 public class ModBlock {
 
+    /*
+    * Blocks
+    * */
+
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
     public static final RegistryObject<Block> STEEL_ORE = registerBlock("steel_ore",()->new
@@ -33,7 +38,12 @@ public class ModBlock {
             new FirestoneBlock(AbstractBlock.Properties.create(Material.IRON).harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)),ModItemGroup.TUTORIAL_GROUP);
+    public static final RegistryObject<Block> STEEL_STAIR  = registerBlock("steel_stair",()->new StairsBlock(
+            ()->STEEL_BLOCK.get().getDefaultState(),AbstractBlock.Properties.create(Material.IRON)
+            .harvestTool(ToolType.PICKAXE).hardnessAndResistance(6f,8f)),ModItemGroup.TUTORIAL_GROUP);
 
+
+    //// Method
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T>block,ItemGroup itemgroup){
         RegistryObject<T> toReturn = BLOCKS.register(name,block);

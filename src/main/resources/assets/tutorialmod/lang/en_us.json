@@ -1,8 +1,13 @@
 {
   "item.tutorialmod.steel_ingot": "Steel Ingot",
+  "item.tutorialmod.firestone": "Firestone",
 
   "itemGroup.tutorialModTab": "Tutorial Mod",
 
   "block.tutorialmod.steel_ore": "Steel Ore",
-  "block.tutorialmod.steel_block": "Steel Block"
+  "block.tutorialmod.steel_block": "Steel Block",
+  "block.tutorialmod.firestoneblock": "Firestone Block",
+
+  "tooltip.tutorialmod.firestone": "Hold \u00A7eSHIFT\u00A7r for more Information!",
+  "tooltip.tutorialmod.firestone_shift": "Might set you on fire. But also might protect from it!"
 }

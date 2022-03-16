@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "tutorialmod:block/steel_block" }
+    "": { "model": "mccourse:block/steel_block" }
   }
 }
